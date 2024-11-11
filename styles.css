@@ -29,6 +29,7 @@ body {
 .form__subtitle {
     margin: 0 0 1rem;
     font-size: 1.125rem;
+    font-weight: bold;
 }
 
 .form__wrapper:not(:last-child) {
