@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form for grow</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <main>
+        <div class="container">
+            <form action="" class="form" novalidate>
+                <div class="form__wrapper">
+                    <p class="form__subtitle">Личная информация</p>
+                    <div class="form__inner">
+                        <label for="name" class="form__label">Имя</label>
+                        <input id="name" type="text" class="form__input required" placeholder="Иван" value="" tabindex="1">
+                    </div>
+                    <div class="form__inner">
+                        <label for="email" class="form__label">Email</label>
+                        <input id="email" type="email" class="form__input required" placeholder="youremail@mail.ru" value="" tabindex="2">
+
+                    </div>
+                    <div class="form__inner">
+                        <label for="tel" class="form__label">Телефон</label>
+                        <input id="tel" type="tel" class="form__input required" placeholder="+7 (___) ___-__-__" value="" tabindex="3">
+                    </div>
+                </div>
+                <div class="form__wrapper">
+                    <p class="form__subtitle">Информация обизнесе</p>
+                    <div class="form__inner">
+                        <label for="income" class="form__label">Ожидаемый оборот</label>
+                        <input id="income" type="number" class="form__input required" step="0.1" data-min="0" value="" tabindex="4">
+                    </div>
+                    <div class="form__inner">
+                        <label for="indusry" class="form__label">Выбор индустрии</label>
+                        <select id="indusry" name="indusry" class="form__select required"  tabindex="5">
+                            <option value="">Не выбрано</option>
+                            <option value="indusry1">Индустрия 1</option>
+                            <option value="indusry2">Индустрия 2</option>
+                            <option value="indusry3">Индустрия 3</option>
+                        </select>
+                    </div>
+                    <label class="form__agreement">
+                        <input type="checkbox" class="agreement required" checked>
+                        <span class="form__check"></span>Я принимаю правила сервиса</a>
+                    </label>
+                </div>
+                <button type="submit" class="form__button" tabindex="6"><span class="form__button-text">Отправить</span></button>
+            </form>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.2.1/dist/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery.maskedinput@1.4.1/src/jquery.maskedinput.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
