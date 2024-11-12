@@ -49,6 +49,7 @@ body {
 .form__input {
     padding: 1rem 1.5rem;
     width: 100%;
+    font-size: 16px;
     border: 1px solid #5361f0;
     border-radius: 10px;
 }
@@ -56,6 +57,7 @@ body {
 .form__select {
     padding: 1rem 1.5rem;
     width: 100%;
+    font-size: 16px;
     border: 1px solid #5361f0;
     border-radius: 10px;
     -moz-appearance: none;
